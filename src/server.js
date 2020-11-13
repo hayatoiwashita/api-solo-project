@@ -33,6 +33,17 @@ const setupExpressServer = () => {
     });
   });
 
+  app.put("/todos/:id", function (req, res) {
+    db.todos.findOne({id: req.params.id}).then((todo) => {
+      for (const key in req.body) {
+        todo[key] = req.body[key];
+      }
+      todo.save();
+    }).then(() => {
+      res.status(200).end();
+    });
+  });
+
   app.delete("/todos/:id", function (req, res) {
     db.todos.findOne({id: req.params.id}).then((todo) => {
       todo.destroy();
