@@ -5,8 +5,8 @@
   "author": "hayatoiwashita <iwashita511@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "lint": "eslint --fix --ext .js .",
     "sequelize": "sequelize"
   },
@@ -16,6 +16,7 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "nodemon": "^2.0.6"
   }
 }
