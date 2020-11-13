@@ -32,8 +32,6 @@ describe("The express server", () => {
     //       "title": "study",
     //       "content": "make todo API",
     //       "status": "DONE",
-    //       "created": "1970-01-01T05:36:41.113Z",
-    //       "updated": "1970-01-01T05:36:41.113Z",
     //       "createdAt": "2020-11-13T06:21:04.876Z",
     //       "updatedAt": "2020-11-13T07:17:35.584Z"
     //     },
@@ -43,8 +41,6 @@ describe("The express server", () => {
     //       "title": "study",
     //       "content": "make todo API",
     //       "status": "DONE",
-    //       "created": "1970-01-01T05:36:41.113Z",
-    //       "updated": "1970-01-01T05:36:41.113Z",
     //       "createdAt": "2020-11-13T07:03:12.030Z",
     //       "updatedAt": "2020-11-13T07:18:44.361Z"
     //     },
@@ -54,8 +50,6 @@ describe("The express server", () => {
     //       "title": "shopping",
     //       "content": "buy shoes",
     //       "status": "PROGRESS",
-    //       "created": "1970-01-01T05:36:41.113Z",
-    //       "updated": "1970-01-01T05:36:41.113Z",
     //       "createdAt": "2020-11-13T07:37:27.746Z",
     //       "updatedAt": "2020-11-13T07:37:27.746Z"
     //     }
@@ -91,8 +85,6 @@ describe("The express server", () => {
     //     "title": "study",
     //     "content": "make todo API",
     //     "status": "DONE",
-    //     "created": "1970-01-01T05:36:41.113Z",
-    //     "updated": "1970-01-01T05:36:41.113Z",
     //     "createdAt": "2020-11-13T06:21:04.876Z",
     //     "updatedAt": "2020-11-13T07:17:35.584Z"
     //   };
@@ -114,9 +106,7 @@ describe("The express server", () => {
         "user_id": 123,
         "title": "shopping",
         "content": "buy shoes",
-        "status": "PROGRESS",
-        "created": 20201113,
-        "updated": 20201113
+        "status": "PROGRESS"
       };
 
       // Exercise & Assert

@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
     }
-  }
+  };
   todos.init({
     id: {
       type: DataTypes.INTEGER,
@@ -22,9 +22,7 @@ module.exports = (sequelize, DataTypes) => {
     user_id: DataTypes.INTEGER,
     title: DataTypes.STRING,
     content: DataTypes.STRING,
-    status: DataTypes.STRING,
-    created: DataTypes.DATE,
-    updated: DataTypes.DATE
+    status: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'todos',

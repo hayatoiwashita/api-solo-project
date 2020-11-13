@@ -1,0 +1,71 @@
+[
+  {
+    "user_id": 123,
+    "title": "Preparation of the project",
+    "content": "Create a template project ",
+    "status": "DONE",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 456,
+    "title": "Building a DB",
+    "content": "Building a Postgresql",
+    "status": "DONE",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 123,
+    "title": "Checking DB operation",
+    "content": "Check the behavior of the DB by throwing a query",
+    "status": "PROGRESS",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 123,
+    "title": "Run express",
+    "status": "PROGRESS",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 456,
+    "title": "Checking express operation",
+    "content": "Display localhost:3000/todos in browser",
+    "status": "PROGRESS",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 123,
+    "title": "Connect express and DB",
+    "content": "Connect to the DB from the express method",
+    "status": "New",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 123,
+    "title": "Create the get method",
+    "status": "New",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 456,
+    "title": "task",
+    "content": "make todo API test",
+    "status": "New",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  },
+  {
+    "user_id": 789,
+    "title": "Create HTML",
+    "status": "New",
+    "createdAt": "2020-11-13T06:21:04.876Z",
+    "updatedAt": "2020-11-13T06:21:04.876Z"
+  }
+]

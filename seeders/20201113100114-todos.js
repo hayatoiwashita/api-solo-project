@@ -1,4 +1,5 @@
 'use strict';
+const todos = require(__dirname + '/todos.json');
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -11,18 +12,8 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-    await queryInterface.bulkInsert('todos', [{
-      user_id: 123,
-      title: "task",
-      content: "make todo API",
-      status: "PROGRESS",
-      created: "2020-11-13T06:21:04.876Z",
-      updated: "2020-11-13T06:21:04.876Z",
-      createdAt: "2020-11-13T06:21:04.876Z",
-      updatedAt: "2020-11-13T07:17:35.584Z",
-      createdAt: new Date(),
-      updatedAt: new Date()
-    }], {});
+    console.log(todos);
+    await queryInterface.bulkInsert('todos', todos, {});
   },
 
   down: async (queryInterface, Sequelize) => {

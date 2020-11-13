@@ -19,23 +19,13 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       title: {
-        allowNull: false,
         type: Sequelize.STRING
       },
       content: {
         type: Sequelize.STRING
       },
       status: {
-        allowNull: false,
         type: Sequelize.STRING
-      },
-      created: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updated: {
-        allowNull: false,
-        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,
