@@ -16,6 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   todos.init({
     id: {
       type: DataTypes.INTEGER,
+      autoIncrement: true,
       primaryKey: true
     },
     user_id: DataTypes.INTEGER,

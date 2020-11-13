@@ -10,10 +10,24 @@ app.get("/todos", function (req, res) {
   });
 });
 
+app.get("/todos/:id", function (req, res) {
+  db.todos.findByPk(req.params.id).then((todos) => {
+    res.send(todos);
+  });
+});
+
 app.post("/todos", function (req, res) {
-  console.log(req.body);
   db.todos.create(req.body).then(() => {
     res.status(201).end();
+  });
+});
+
+app.patch("/todos/:id", function (req, res) {
+  db.todos.update(
+    req.body,
+    {where: {id: req.params.id}}
+  ).then(() => {
+    res.status(200).end();
   });
 });
 
