@@ -1,10 +1,11 @@
 const express = require("express");
+const cors = require('cors');
 const db = require("../models/index");
 
 const setupExpressServer = () => {
   const app = express();
 
-  app.use(express.json());
+  app.use(express.json(), cors({ origin: true, credentials: true }));
 
   app.get("/todos", function (req, res) {
     db.todos.findAll({}).then((todos) => {
