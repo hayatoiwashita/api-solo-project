@@ -12,30 +12,30 @@ const setupExpressServer = () => {
       res.send(todos);
     });
   });
-  
+
   app.get("/todos/:id", function (req, res) {
     db.todos.findByPk(req.params.id).then((todos) => {
       res.send(todos);
     });
   });
-  
+
   app.post("/todos", function (req, res) {
     db.todos.create(req.body).then(() => {
       res.status(201).end();
     });
   });
-  
+
   app.patch("/todos/:id", function (req, res) {
     db.todos.update(
       req.body,
-      {where: {id: req.params.id}}
+      { where: { id: req.params.id } }
     ).then(() => {
       res.status(200).end();
     });
   });
 
   app.put("/todos/:id", function (req, res) {
-    db.todos.findOne({id: req.params.id}).then((todo) => {
+    db.todos.findOne({ id: req.params.id }).then((todo) => {
       for (const key in req.body) {
         todo[key] = req.body[key];
       }
@@ -46,7 +46,7 @@ const setupExpressServer = () => {
   });
 
   app.delete("/todos/:id", function (req, res) {
-    db.todos.findOne({id: req.params.id}).then((todo) => {
+    db.todos.findOne({where: { id: req.params.id }}).then((todo) => {
       todo.destroy();
     }).then(() => {
       res.status(200).end();
